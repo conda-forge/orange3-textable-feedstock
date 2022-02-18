@@ -13,6 +13,8 @@ Development: https://github.com/axanthos/orange3-textable
 
 Documentation: https://orange3-textable.readthedocs.io/
 
+Textable is an open source add-on bringing advanced text-analytical functionalities to the Orange Canvas data mining software package (itself open source).
+
 Current build status
 ====================
 
