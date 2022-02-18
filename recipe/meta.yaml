@@ -11,7 +11,7 @@ source:
   sha256: 87b070592d6f36bc31f6ae25812ce1b41d058b2a7bd974ef7c66d71319f8bf3a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -46,6 +46,7 @@ about:
   license_file: LICENSE
   dev_url: https://github.com/axanthos/orange3-textable
   doc_url: https://orange3-textable.readthedocs.io/
+  description: Textable is an open source add-on bringing advanced text-analytical functionalities to the Orange Canvas data mining software package (itself open source).
 
 extra:
   recipe-maintainers:
