@@ -19,8 +19,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools <61
-    - numpy =1.22
+    - setuptools
+    - setuptools_scm
   run:
     - appdirs
     - chardet
