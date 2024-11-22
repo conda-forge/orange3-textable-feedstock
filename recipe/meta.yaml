@@ -20,7 +20,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools <61
-    - numpu =1.22
+    - numpy =1.22
   run:
     - appdirs
     - chardet
