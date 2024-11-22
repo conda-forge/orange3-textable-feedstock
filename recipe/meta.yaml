@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - pip
+    - pip <24
     - python {{ python_min }}
     - setuptools
   run:
