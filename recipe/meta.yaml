@@ -40,7 +40,6 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-    - importlib-resources
 
 about:
   home: http://textable.io
