@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools <65
+    - setuptools <61
   run:
     - appdirs
     - chardet
