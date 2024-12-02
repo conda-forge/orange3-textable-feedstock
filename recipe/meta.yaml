@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - pip
+    - pip 22.0.3  #version for last successful built
     - python >=3
     - setuptools 60.9.3 #version for last successful built
   run:
