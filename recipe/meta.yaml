@@ -11,7 +11,7 @@ source:
   sha256: 87b070592d6f36bc31f6ae25812ce1b41d058b2a7bd974ef7c66d71319f8bf3a
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3
+    - setuptools 60.9.3 #version for last successful built
   run:
     - appdirs
     - chardet
