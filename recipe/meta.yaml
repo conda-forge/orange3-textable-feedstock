@@ -17,9 +17,10 @@ build:
 
 requirements:
   host:
-    - pip 22.0.3  #version for last successful built
-    - python >=3
+    - pip
+    - python =3.9
     - setuptools
+    - setuptools-scm
   run:
     - appdirs
     - chardet
