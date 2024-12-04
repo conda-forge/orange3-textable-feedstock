@@ -19,9 +19,9 @@ build:
 
 requirements:
   host:
-    - pip =22.0.3
+    - pip
     - python =3.9
-    - setuptools =60.9.3
+    - setuptools
   run:
     - appdirs
     - chardet
