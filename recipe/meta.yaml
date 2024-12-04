@@ -14,13 +14,14 @@ build:
   number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+   - Textable = _textable.widgets
 
 requirements:
   host:
-    - pip
-    - python =3.9
-    - setuptools
-    - setuptools-scm
+    - pip =22.0.3
+    - python >=3
+    - setuptools =60.9.3
   run:
     - appdirs
     - chardet
@@ -38,6 +39,7 @@ test:
     - _textable.widgets
   commands:
     - pip check
+    - Textable
   requires:
     - pip
 
