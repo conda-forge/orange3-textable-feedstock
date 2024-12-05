@@ -37,7 +37,7 @@ test:
     - _textable.widgets
   commands:
     - pip check
-    - Textab;e
+    - Textable
   requires:
     - pip
     - python =3.9
