@@ -148,6 +148,6 @@ In order to produce a uniquely identifiable distribution:
 
 Feedstock Maintainers
 =====================
-<!-- dummy commit to enable rerendering -->
+
 * [@HeavyTony2](https://github.com/HeavyTony2/)
 
