@@ -17,15 +17,13 @@ build:
 
 requirements:
   host:
-    - pip =22.0.3 #last known version working
     - python {{ python_min }}
-    - setuptools =60.9.3  #the package is getting old and is having issues with newer pip and setuptools version
+    - setuptools
   run:
     - appdirs
     - chardet
-    - future
-    - lttl >=2.0.12
-    - orange3 >=3.14.0
+    - lttl >=2.1.0
+    - orange3
     - pycountry
     - python >={{ python_min }}
     - setuptools
