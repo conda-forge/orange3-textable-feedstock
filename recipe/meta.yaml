@@ -1,5 +1,5 @@
 {% set name = "Orange3-Textable" %}
-{% set version = "3.1.11" %}
+{% set version = "3.2.0" %}
 
 
 package:
@@ -7,25 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/Orange3-Textable-{{ version }}.tar.gz
-  sha256: 87b070592d6f36bc31f6ae25812ce1b41d058b2a7bd974ef7c66d71319f8bf3a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 3c3fca80fdc634fbb650cf01d55a1fe1a9fb448d0630d2c873ca807e18f2cf9c
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - pip =22.0.3 #last known version working
     - python {{ python_min }}
     - setuptools =60.9.3  #the package is getting old and is having issues with newer pip and setuptools version
+    - pip =22.0.3 #last known version working
   run:
     - appdirs
     - chardet
-    - future
-    - lttl >=2.0.12
-    - orange3 >=3.14.0
+    - lttl >=2.1.0
+    - orange3
     - pycountry
     - python >={{ python_min }}
     - setuptools
@@ -48,7 +47,8 @@ about:
   license_file: LICENSE
   dev_url: https://github.com/axanthos/orange3-textable
   doc_url: https://orange3-textable.readthedocs.io/
-  description: Textable is an open source add-on bringing advanced text-analytical functionalities to the Orange Canvas data mining software package (itself open source).
+  description: |
+    Textable is an open source add-on bringing advanced text-analytical functionalities to the Orange Canvas data mining software package (itself open source).
 
 extra:
   recipe-maintainers:
