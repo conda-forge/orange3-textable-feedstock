@@ -11,15 +11,16 @@ source:
   sha256: 3c3fca80fdc634fbb650cf01d55a1fe1a9fb448d0630d2c873ca807e18f2cf9c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools =60.9.3  #the package is getting old and is having issues with newer pip and setuptools version
-    - pip =22.0.3 #last known version working
+    - setuptools
+    - pip
+    - pyinstaller
   run:
     - appdirs
     - chardet
