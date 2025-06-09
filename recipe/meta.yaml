@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - setuptools
-    - pip
+    - pip =22.0.3 #last known version working
   run:
     - appdirs
     - chardet
