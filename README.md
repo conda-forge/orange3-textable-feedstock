@@ -3,7 +3,7 @@ About orange3-textable-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-textable-feedstock/blob/main/LICENSE.txt)
 
-Home: http://textable.io
+Home: http://textable.io/
 
 Package license: GPL-3.0-or-later
 
@@ -14,7 +14,6 @@ Development: https://github.com/axanthos/orange3-textable
 Documentation: https://orange3-textable.readthedocs.io/
 
 Textable is an open source add-on bringing advanced text-analytical functionalities to the Orange Canvas data mining software package (itself open source).
-
 
 Current build status
 ====================
