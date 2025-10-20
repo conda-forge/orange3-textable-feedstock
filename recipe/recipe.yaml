@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: Orange3-Textable
-  version: 3.2.6
+  version: "3.2.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') | lower }}-${{ version }}.tar.gz
-  sha256: 021df5f1c9bf7e08c6536f969d8e832946cc88ab5494848551c0660720a0a475
+  sha256: 92721d90acc1c76776b67f42587a9ef6b36a1dcffdc0c4eebd6e9b22afa750f4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
