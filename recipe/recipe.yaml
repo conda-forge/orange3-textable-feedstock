@@ -13,7 +13,7 @@ source:
   sha256: 92721d90acc1c76776b67f42587a9ef6b36a1dcffdc0c4eebd6e9b22afa750f4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -37,12 +37,8 @@ tests:
       imports:
         - _textable
         - _textable.widgets
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}*
-    script:
-      - pip check
+      pip_check: true
+      python_version: ${{ python_min }}.*
 
 about:
   summary: Textable add-on for Orange 3 data mining software package.
